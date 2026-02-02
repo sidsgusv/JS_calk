@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple JS Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <main class="app">
+        <section class="card">
+            <header>
+                <h1>Calculator</h1>
+                <p>Enter an expression and press Enter or click Calculate.</p>
+            </header>
+
+            <label class="field">
+                <span>Expression</span>
+                <input id="expression" type="text" inputmode="decimal" placeholder="e.g. (12 + 8) / 4 * 3"
+                    autocomplete="off" />
+            </label>
+
+            <div class="actions">
+                <button id="calculate" type="button">Calculate</button>
+                <button id="clear" type="button" class="secondary">Clear</button>
+            </div>
+
+            <div class="result" role="status" aria-live="polite">
+                <span class="label">Result</span>
+                <span id="resultValue" class="value">—</span>
+            </div>
+
+            <p id="error" class="error" role="alert" aria-live="assertive"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
